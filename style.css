@@ -1,0 +1,362 @@
+/* Thiết lập chung cho body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Phần header */
+header {
+    background-color: #333;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header .logo img {
+    height: 40px;
+}
+
+header form {
+    display: flex;
+    align-items: center;
+}
+
+header form input[type="search"] {
+    padding: 5px;
+    font-size: 16px;
+}
+
+header form button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+header form button:hover {
+    background-color: #e07b00;
+}
+
+header .user-profile, header .thong-bao {
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Phần chính chia thành 3 cột ngang */
+.main-content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.column {
+    background-color: white;
+    padding: 20px;
+    width: 30%;  /* Mỗi cột chiếm 30% chiều rộng */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Đảm bảo các cột chiếm đều không gian, không bị đẩy xuống */
+.column h3 {
+    margin-top: 0;
+}
+.vi-tien {
+    display: flex;
+    justify-content: space-around;
+    background-color: #4c4b4b;
+    color: rgb(19, 18, 18);
+    padding: 10px 0;
+}
+.trang-chinh{
+    width: 200px;
+    height: 70px;
+    position: relative;
+    border-radius: 20%;
+
+}
+.trang-chinh:hover{
+    background-color: #88b159;
+}
+
+.trang-chinh .my-icon1{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+.trang-chinh p {
+     position: absolute;
+     top: 10px;
+     left: 70px;
+}
+
+
+
+
+/* Movie List */
+.movie-card {
+    background-color: white;
+    margin: 15px;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.movie-card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.movie-card p {
+    margin: 10px 0;
+}
+
+.ratiing {
+    font-size: 18px;
+    color: #f1c40f;
+}
+
+/* Section for shopping */
+.shopping-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.shopping-card {
+    background-color: white;
+    width: 30%;
+    margin: 15px 0;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.shopping-card img {
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+.shopping-card p {
+    margin: 5px 0;
+}
+
+.shopping-card button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.shopping-card button:hover {
+    background-color: #e07b00;
+}
+
+/* Movie Trailer Section */
+.moive-trailer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.moive-trailer img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.moive-trailer button {
+    background-color: #ff8c00;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+.moive-trailer button:hover {
+    background-color: #e07b00;
+}
+
+/* Section for tickets */
+.thong-tin-ve {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.bieu-do-ghe {
+    background-color: #363749;
+    width: 100%;
+    height: 500px;
+    position: relative; 
+}
+.bd1{
+    position: absolute;
+    top: 5px;
+    left: 10px;
+}
+.bd2{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+
+}
+.my-icon{
+    color:#8dd23f ;
+    position: absolute;
+    top: 20px;
+    left:175px;
+
+}
+.bd3{
+    position: absolute;
+    top: 5px;
+    left: 200px;
+}
+.bd4{
+    position: absolute;
+    top: 30px;
+    left: 200px;
+}
+
+.ghe-ngoi {
+    position: absolute;
+    top: 100px;
+    left: 47px;
+    width: 300px;
+    height: 300px;
+    background-color: #0c0a0a;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(7, 1fr);
+    gap: 5px;
+    place-items: center;
+    
+}
+
+.square {
+    width: 15px;
+    height: 15px;
+    background-color: #7a3b42;
+    cursor: pointer;
+    transition: background-color 0.3s ease,transfrom 0.3s ease;
+    border-radius: 30%;
+}
+.ghe-ngoi .square:nth-child(1),
+.ghe-ngoi .square:nth-child(2),
+.ghe-ngoi .square:nth-child(7),
+.ghe-ngoi .square:nth-child(8),
+.ghe-ngoi .square:nth-child(9),
+.ghe-ngoi .square:nth-child(16),
+.ghe-ngoi .square:nth-child(49),
+.ghe-ngoi .square:nth-child(56) {
+    visibility: hidden; /* Ẩn các ô để tạo hình bát giác */
+}
+
+.ghe-ngoi .square:hover {
+    background-color: #225316; /* Thay đổi màu khi hover */
+    transform: scale(1.1);
+}
+
+
+.ve-dat {
+    background-color: rgb(152, 80, 80);
+    border-radius: 10px;
+    width: 100%;
+    height: 187px;
+    position: relative;
+}
+
+.ve-dat button {
+    position: absolute;
+    top: 137px;
+    left: 50px;
+    background-color: #ff8c00;
+    border-radius: 20%;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100px ;
+    height: 35px; ;
+}
+
+.ve-dat button:hover {
+    background-color: #b9e01c;
+}
+.ve-dat .ticket-info1{
+    position: absolute;
+    left: 17px;
+    top: 60px;
+}
+.ve-dat .ticket-info2{
+    position: absolute;
+    left: 17px;
+    top: 80px;
+}
+.ve-dat .ticket-info3{
+    position: absolute;
+    left: 12px;
+    top: 120px;
+    font-size: 20px;
+}
+.ve-dat:before,
+  .ve-dat:after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    z-index: 1;
+}
+  /* Cắt bên trái */
+.ve-dat:before {
+    top: 50%;
+    left: -10px;
+    transform: translateY(-50%);
+}
+  /* Cắt bên phải */
+.ve-dat:after {
+    top: 50%;
+    right: -10px;
+    transform: translateY(-50%);
+}
+.ve-dat .cut-line{
+    width: 10px;
+    bottom: 10px;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-image: repeating-linear-gradient(
+        to bottom,
+        #333,
+        #333 3px,
+        transparent 3px,
+        transparent 10px
+
+    );
+}
+.ve-dat img{
+    position: absolute;
+    top:0px ;
+    left: 200px;
+    width: 200px;
+    height: 187px;
+    border-radius: 10px;
+
+}
+
+
