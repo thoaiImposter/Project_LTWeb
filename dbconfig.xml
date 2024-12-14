@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatabaseConfig>
+    <Connection>
+        <Server>//localhost:8080/MovieBookingServlet</Server>
+        <Database>MovieTicketBooking</Database>
+        <User>your_username</User>
+        <Password>your_password</Password>
+    </Connection>
+</DatabaseConfig>

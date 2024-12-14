@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <link rel="" href="" >
+</head>
+<body>
+    <h1> Thêm phim mới</h1>
+    <form action="/MovieBookingServlet" method="post" enctype="multipart/form-data">
+    <label for="title">Tên phim:</label>
+    <input type="text" name="title" id="title" required><br>
+    
+    <label for="genre">Thể loại:</label>
+    <input type="text" name="genre" id="genre" required ><br>
+    
+    <label for="releaseDate"> Ngày phát hành:</label>
+    <input type="date" name="releaseDate" id="releaseDate" required><br>
+    
+    <label for="posters"> Ảnh posters:</label>
+    <input type="file" name="posters" id="posters" accept="image/*" multiple required><br>
+    
+    <button type="submit"> thêm phim</button>
+    </form>
+</body>
+</html>
